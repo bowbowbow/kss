@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#/usr/bin/python2
+# /usr/bin/python2
 '''
 By kyubyong park. kbpark.linguist@gmail.com.
 https://www.github.com/kyubyong/multi-speech-corpora/dc_tts
@@ -15,9 +15,10 @@ import tqdm
 from hyperparams import Hyperparams as hp
 
 # Load data
-fpaths, _, _ = load_data() # list
+fpaths, _, _ = load_data()  # list
 
 for fpath in tqdm.tqdm(fpaths):
+    print(fpath)
     fname, mel, mag = load_spectrograms(fpath)
     if not os.path.exists("{}/mels".format(hp.lang)): os.makedirs("{}/mels".format(hp.lang))
     if not os.path.exists("{}/mags".format(hp.lang)): os.makedirs("{}/mags".format(hp.lang))
