@@ -40,8 +40,12 @@ class Hyperparams:
     attention_win_size = 3
 
     # data
-    data = "/Users/seungwon/Desktop/data/kss"
-    lang = "/Users/seungwon/Desktop/data/lang"
+    # data = "/Users/seungwon/Desktop/data/kss"
+    # lang = "/Users/seungwon/Desktop/data/lang"
+
+    data = "/home/ubuntu/data/kss"
+    lang = "/home/ubuntu/data/lang"
+
     test_data = "ko.txt"
 
     if num_exp == 0:
